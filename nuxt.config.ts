@@ -1,20 +1,23 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  nitro: {
+    preset: "vercel",
+  },
   modules: ["@nuxtjs/i18n", "@nuxtjs/tailwindcss"],
   i18n: {
     //"en", "tc", "sc"
     locales: [
       {
         code: "en",
-        name:"EN"
+        name: "EN",
       },
       {
         code: "tc",
-        name:"繁"
+        name: "繁",
       },
       {
         code: "sc",
-        name:"简"
+        name: "简",
       },
     ],
     defaultLocale: "tc",
